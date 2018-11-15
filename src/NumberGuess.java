@@ -13,7 +13,7 @@ public class NumberGuess
 	{
 		Scanner user = new Scanner(System.in);
 		Random rand = new Random();
-		int  n = rand.nextInt(20) + 1;
+		int  num = rand.nextInt(20) + 1;
 		System.out.print("Enter a number between 1 and 20: ");
 		int number = Integer.parseInt(user.nextLine());
 		
@@ -21,13 +21,13 @@ public class NumberGuess
 		{
 			System.out.print("\nYour guess is invalid.");
 		}
-		else if(number!=n)
+		else if(number!=num)
 		{
-			System.out.print("\nYour guess is incorrect. The number is: " + n);
+			System.out.print("\nYour guess is incorrect. The number is: " + num);
 		}
-		else(n==number)
+		else(num==number)
 		{
-			System.out.print("\nYour guess is correct. The number is: " + n);
+			System.out.print("\nYour guess is correct. The number is: " + num);
 		}
 			
 				
